@@ -1,0 +1,82 @@
+/* General Page Styling */
+body {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
+}
+
+/* Game Button Layout */
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 120px);
+    gap: 40px;
+    justify-content: center;
+}
+
+/* Buttons */
+.btn {
+    height: 120px;
+    width: 120px;
+    border: 5px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Button Hover */
+.btn:hover {
+    transform: scale(1.001);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+
+/* Individual Colors */
+#red {
+    background-color: #e74c3c;
+}
+
+#blue {
+    background-color: #3498db;
+}
+
+#yellow {
+    background-color: #f1c40f;
+}
+
+#purple {
+    background-color: #9b59b6;
+}
+
+/* Flash Effect */
+.flash {
+    background-color: white !important;
+    box-shadow: 0 0 30px white;
+    transform: scale(1.1);
+}
+
+/* Game Over Effect */
+/* Game Over Full Red */
+.over {
+    background: red !important;
+    transition: background-color 0.3s ease;
+}
+
